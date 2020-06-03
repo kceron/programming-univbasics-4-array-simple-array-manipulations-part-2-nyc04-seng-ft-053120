@@ -15,5 +15,12 @@ def using_flatten(array)
 end 
 
 def using_delete(array, string)
-  
+  array.delete(string)
 end 
+
+
+a = [ "a", "b", "b", "b", "c" ]
+a.delete("b")                   #=> "b"
+a                               #=> ["a", "c"]
+a.delete("z")                   #=> nil
+a.delete("z") { "not found" } 
