@@ -7,5 +7,5 @@ def using_insert(array, new_elem)
 end 
 
 def using_uniq(array)
-  
+  array.uniq 
 end 
